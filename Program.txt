@@ -1,0 +1,89 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace ConsoleApplication10
+{
+    public class Program
+    {
+        static void Main(string[] args)
+        {
+
+        }
+        public static bool IsOdd(int n)
+        {
+            if (n % 2 == 0)
+
+                return false;
+
+            else
+                return true;
+        }
+
+        public static int Ceil(float x)
+        {
+            int a = (int)x;
+            if (x > 0)
+                if (x > a)
+                    a = a + 1;
+            return (a);
+        }
+        public static int Floor(float x)
+        {
+            int a = (int)x;
+            if (x < 0)
+                if (x != a)
+                    a = a - 1;
+
+            return (a);
+        }
+        public static int Square(float x)
+        {
+            float a = (x);
+            a = a * a;
+            return 0;
+        
+        }
+
+        public static int Pow(int a, int b)
+        {   
+            for (int i = 1; i<= b; i++);
+                int p = a*a;
+            return (p);
+        }
+         static void Random1()
+        {
+            int iRanDom;
+            string strRanDom;
+            Random rd = new Random();            
+            iRanDom = rd.Next(1, 2^31-1);           
+            strRanDom = rd.Next(1, 2^31-1).ToString();
+        }
+         static void Random2()
+        {
+            float iRanDom;
+            string strRanDom;
+            Random rd = new Random();
+            iRanDom = rd.Next(0,1);
+            strRanDom = rd.Next(0,1).ToString();
+        }
+         public static int Abs(int x)
+         {
+             int a = (int)x;
+             if (x < 0)
+                 a = -(x);
+             return (a);
+         }
+         public static void Cube()
+         {
+             double num, res;
+             Console.Write("Enter the Number : ");
+             num = double.Parse(Console.ReadLine());
+             res = Math.Ceiling(Math.Pow(num, (double)1 / 3));
+             Console.Write("Cube Root : " + res);
+         }
+
+    }
+}
